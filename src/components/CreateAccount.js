@@ -13,9 +13,6 @@ function CreateAccount(){
     //Estado Modal 
     const [openModal, setOpenModal] = React.useState(false);
 
-    //variable identificador
-    let correo; 
-
     //Estado del formulario
     const [form, setForm] = React.useState({});
    
@@ -31,10 +28,6 @@ function CreateAccount(){
         //Validacion de los campos 
         e.preventDefault();
         console.log('Formulario Enviado');
-
-        //guardar variable identificador
-        correo = form.correo
-        console.log(correo)
 
         //guardar usuario
         saveUser(form)
@@ -78,7 +71,7 @@ function CreateAccount(){
                     <div className='Modal-container'>
                         <h2>Felicidades!!</h2>
                         <p>Tu cuenta ha sido creada</p>
-                        <a href={`/myAccount/${form.correo}`}><button>Cerrar</button></a>
+                        <a href={`/myAccount`}><button>Cerrar</button></a>
                     </div>
                 </Modal>
             )}

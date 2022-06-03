@@ -39,7 +39,7 @@ function ListVideogame(){
 
             <div className="myAccount">
                 <div className="container-myAccount">
-                    <a href={`/myAccount/${correo}`}><img className='logoUser' src={logoUser} alt="" /></a>
+                    <a href={`/myAccount`}><img className='logoUser' src={logoUser} alt="" /></a>
                 </div>
             </div>
         </>
