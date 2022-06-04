@@ -5,10 +5,12 @@ function ItemVideogame(props){
 
     return(
         <div className="container-videogames">
+            <p>{props.descripcion}</p>
+            
             <div className="container-title">
                 <h2>{props.nombre}</h2>
             </div>
-            <p>{props.descripcion}</p>
+            
             <a href={`${props.link}`}>¡Jugar Ahora!</a>
         </div>    
     );

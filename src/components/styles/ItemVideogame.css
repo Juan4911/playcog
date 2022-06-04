@@ -16,12 +16,13 @@
     border: 1px solid var(--bluelight) ;
     border-radius: 12px;
     margin-bottom: 12px;
+    align-items: center;
 }
 
 .container-videogames{
     margin-top: 24px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     border-bottom: 1px solid var(--Black);
 }
